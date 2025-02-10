@@ -11,10 +11,24 @@ A web application to search and filter rental houses in Australia. This project 
 ## Getting Started
 ### Prerequisites
 - Node.js and npm installed
-- MongoDB database (local or cloud)
+- AWS DynamoDB
 
 ### Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/rental-website.git
    cd rental-website
+   
+## Using AWS DynamoDB
+
+### Prerequisites
+- AWS account
+
+### Setup
+1. Create a DynamoDB table:
+   - Go to the DynamoDB service in the AWS Management Console.
+   - Create a new table with the name `RentalProperties` and specify the primary key (ID).
+
+2. Install AWS SDK:
+   ```bash
+   npm install aws-sdk
